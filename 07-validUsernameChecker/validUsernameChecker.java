@@ -9,10 +9,8 @@ class UsernameValidator {
 }
 
 public class validUsernameChecker {
-    private static final Scanner entry = new Scanner(System.in);
-    
     public static void main(String[] args) {
-
+        Scanner entry = new Scanner(System.in);
         Integer n = Integer.parseInt(entry.nextLine());
 
         for (Integer i = 0; i < n; i++) {
@@ -25,5 +23,7 @@ public class validUsernameChecker {
                 System.out.println("Invalid");
             }           
         }
+
+        entry.close();
     }
 }
